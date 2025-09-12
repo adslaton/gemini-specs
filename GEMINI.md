@@ -15,7 +15,7 @@ The workflow consists of three main commands that you can issue to the Gemini ag
 ## Repository Structure
 
 *   `.gemini/commands/`: Contains the definitions for the `specify`, `plan`, and `tasks` commands.
-*   `.specify/`: Contains the core logic and templates for the SDD workflow.
+*   `.specify/`: Contains the a core logic and templates for the SDD workflow.
     *   `memory/`: Contains the `constitution.md`, which defines the engineering principles and standards for this project.
     *   `scripts/`: Contains shell scripts that automate parts of the workflow.
     *   `templates/`: Contains templates for the specification, plan, and task files.
@@ -24,6 +24,34 @@ The workflow consists of three main commands that you can issue to the Gemini ag
 
 1.  **Define your constitution:** Before you start, fill out the `.specify/memory/constitution.md` file. This document will guide the agent in making design and implementation decisions.
 2.  **Specify your first feature:** Run `gemini specify "<your feature description>"` to begin.
+
+## Contribution Guidelines
+
+### Conventional Commits
+
+All commit messages should follow the [Conventional Commits](https://www.conventionalcommits.org/) specification. This helps in automating changelog generation and makes the commit history more readable.
+
+The format is as follows:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer]
+```
+
+### Branch Naming
+
+Branch names should also follow a conventional format, similar to commit types. This helps in quickly identifying the purpose of a branch.
+
+*   `feat/...`: For new features.
+*   `fix/...`: For bug fixes.
+*   `docs/...`: For documentation changes.
+*   `style/...`: For code style changes.
+*   `refactor/...`: For code refactoring.
+*   `test/...`: For adding or improving tests.
+*   `chore/...`: For routine tasks and maintenance.
 
 ## The Constitution
 
